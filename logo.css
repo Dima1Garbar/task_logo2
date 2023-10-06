@@ -1,123 +1,145 @@
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-.form-sign-in-superadmin{
-  width: 1360px;
-  height: 780px;
-  padding: 0 168px 0 0;
-  display: flex;
+.form-sign-in-superadmin {
+    width: 1360px;
+    height: 780px;
+    padding: 0 168px 0 0;
+    display: flex;
 }
 
-.form-logo{
-  width: 453px;
-  height: 780px;
-  padding: 207px 0 0;
-  background-image: linear-gradient(to top, #11194e, #030512);
+.form-logo {
+    width: 453px;
+    height: 780px;
+    padding: 207px 0 0;
+    background-image: linear-gradient(to top, #11194e, #030512);
 }
 
-.supreme-logo{
-  width: 230px;
-  height: 40px;
-  margin: 0 0 0 105px;
-  object-fit: contain;
+.supreme-logo {
+    width: 230px;
+    height: 40px;
+    margin: 0 0 0 105px;
+    object-fit: contain;
 }
 
 .wave-top {
-  width: 453px;
-  height: 209px;
-  margin: 324px 0 0 0;
-  object-fit: contain;
-  background-image: linear-gradient(to top, #121c60, #090e2b);
-}
-.pic-cigares{
-  width: 336px;
-  height: 257px;
-  margin: 0 0 0 67px;
-  object-fit: contain;
-  position: relative;
-  bottom: 299px
+    width: 453px;
+    height: 209px;
+    margin: 324px 0 0 0;
+    object-fit: contain;
+    background-image: linear-gradient(to top, #121c60, #090e2b);
 }
 
-.sign-in-text{
-  width: 570px;
-  height: 40px;
-  font-family: Montserrat;
-  font-size: 34px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.18;
-  letter-spacing: normal;
-  color: #333940;
-  margin: 246px 0 24px 169px;
-  text-align: center;
+.pic-cigares {
+    width: 336px;
+    height: 257px;
+    margin: 0 0 0 67px;
+    object-fit: contain;
+    position: relative;
+    bottom: 299px
 }
 
-.sign-in-input{
-  display: flex;
-  flex-direction: column;
+.sign-in-text {
+    width: 570px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    color: #333940;
+    margin: 246px 0 24px 169px;
+    text-align: center;
 }
 
-.sign-in-input--text-styles{
-  font-family: Montserrat;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  color: #78899c;
+.sign-in-input {
+    display: flex;
+    flex-direction: column;
 }
 
-.sign-in-input-box--styles{
-  width: 570px;
-  height: 56px;
-  border-radius: 6px;
-  border: solid 1px #b8c2cc;
-  background-color: #ebeff2;
-  margin: 0 0 0 169px;
-  display: flex;
-  flex-direction: row;
+.sign-in-input--text-styles {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #78899c;
 }
 
-.sign-in-input-email-box{
-	margin-bottom: 16px;
+.sign-in-input-box--styles {
+    width: 570px;
+    height: 56px;
+    border-radius: 6px;
+    border: solid 1px #b8c2cc;
+    background-color: #ebeff2;
+    margin: 0 0 0 169px;
+    display: flex;
+    flex-direction: row;
 }
 
-.sign-in-input--style{
-  width: 380px;
-  height: 56px;
-  border: solid 1px #b8c2cc;
-  background-color: #ffffff;
-  position: relative;
-  bottom: 1px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  padding: 16px;
+.sign-in-input-email-box {
+    margin-bottom: 16px;
 }
 
-.sign-in-text-box{
-	width:190px;
+.sign-in-input--style {
+    width: 380px;
+    height: 56px;
+    border: solid 1px #b8c2cc;
+    background-color: #ffffff;
+    position: relative;
+    bottom: 1px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
     padding: 16px;
 }
 
-.button-sign-in{
-  width: 570px;
-  height: 56px;
-  margin: 40px 0 0 169px;
-  padding: 16px 251px;
-  border-radius: 8px;
-  background-image: linear-gradient(to top, #0daeff, #0080ff);
-  font-family: Montserrat;
-  font-size: 19px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.26;
-  letter-spacing: normal;
-  color: #ffffff;
-  border: solid 1px #b8c2cc;
+.sign-in-text-box {
+    width: 190px;
+    padding: 16px;
+}
+
+.button-sign-in {
+    width: 570px;
+    height: 56px;
+    margin: 40px 0 0 169px;
+    padding: 16px 251px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #0daeff, #0080ff);
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: #ffffff;
+    border: solid 1px #b8c2cc;
+    cursor: pointer;
+}
+
+input::placeholder {
+    opacity: 0.3;
+}
+
+input:focus {
+    color: red;
+}
+.eye{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  position: absolute;
+  background: black;
+  margin: 16px 0 0 530px;
+  border: none;
+  cursor: pointer;
 }
