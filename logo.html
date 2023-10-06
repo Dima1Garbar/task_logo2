@@ -26,7 +26,7 @@ Online HTML, CSS and JavaScript editor to run code online.
             <label for="sign-in-label-email" class="sign-in-input--text-styles">Email
         </label>
           </div>	
-        <input class="sign-in-input-email-input sign-in-input--style sign-in-input--text-styles" type="text" placeholder="Email">
+        <input id="sign-in-label-email" class="sign-in-input-email-input sign-in-input--style sign-in-input--text-styles" type="text" placeholder="Email">
         </div>
           
         <div class="sign-in-input-passwod-box sign-in-input-box--styles"> 
@@ -34,13 +34,14 @@ Online HTML, CSS and JavaScript editor to run code online.
             <label for="sign-in-laebl-password" class="sign-in-input--text-styles">Password   
         </label>
           </div>
-        <input class="sign-in-input-password-input sign-in-input--style sign-in-input--text-styles" type="password" placeholder="********">
+        <input id="sign-in-laebl-password" class="sign-in-input-password-input sign-in-input--style sign-in-input--text-styles" type="password" placeholder="********">
+        <button class="eye"></button>
         </div>
       </div>
-       <button class="button-sign-in">Sign in</button>
+       <button class="button-sign-in" onclick="isDataValdi()">Sign in</button>
     </div>
   </form>
-  
+      
 </body>
 <script src="script.js"></script>
   
