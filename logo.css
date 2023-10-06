@@ -72,16 +72,52 @@
   color: #78899c;
 }
 
-.sign-in-input--styles{
+.sign-in-input-box--styles{
   width: 570px;
   height: 56px;
-  padding: 16px 16px;
   border-radius: 6px;
   border: solid 1px #b8c2cc;
   background-color: #ebeff2;
   margin: 0 0 0 169px;
+  display: flex;
+  flex-direction: row;
 }
 
 .sign-in-input-email-box{
 	margin-bottom: 16px;
+}
+
+.sign-in-input--style{
+  width: 380px;
+  height: 56px;
+  border: solid 1px #b8c2cc;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 1px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 16px;
+}
+
+.sign-in-text-box{
+	width:190px;
+    padding: 16px;
+}
+
+.button-sign-in{
+  width: 570px;
+  height: 56px;
+  margin: 40px 0 0 169px;
+  padding: 16px 251px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, #0daeff, #0080ff);
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  color: #ffffff;
+  border: solid 1px #b8c2cc;
 }
