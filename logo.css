@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+.body-style{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .form-sign-in-superadmin {
     width: 1360px;
@@ -14,6 +21,7 @@
     display: flex;
 }
 
+
 .form-logo {
     width: 453px;
     height: 780px;
@@ -21,11 +29,19 @@
     background-image: linear-gradient(to top, #11194e, #030512);
 }
 
-.supreme-logo {
+.form-logo-supreme-logo {
+    margin: 0 0 0 105px;
+}
+
+.form-sign-in-supreme-logo{
+    display: none;
+}
+
+.supreme--logo{
     width: 230px;
     height: 40px;
-    margin: 0 0 0 105px;
     object-fit: contain;
+
 }
 
 .wave-top {
@@ -63,6 +79,7 @@
 .sign-in-input {
     display: flex;
     flex-direction: column;
+    margin: 0 0 0 169px;
 }
 
 .sign-in-input--text-styles {
@@ -76,35 +93,39 @@
 }
 
 .sign-in-input-box--styles {
-    width: 570px;
     height: 56px;
-    border-radius: 6px;
-    border: solid 1px #b8c2cc;
-    background-color: #ebeff2;
-    margin: 0 0 0 169px;
     display: flex;
     flex-direction: row;
 }
 
-.sign-in-input-email-box {
-    margin-bottom: 16px;
+.error--message{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: red;
 }
 
 .sign-in-input--style {
     width: 380px;
-    height: 56px;
     border: solid 1px #b8c2cc;
     background-color: #ffffff;
-    position: relative;
-    bottom: 1px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     padding: 16px;
 }
 
-.sign-in-text-box {
+
+.sign-in-text--box {
     width: 190px;
     padding: 16px;
+    border-radius: 6px;
+    border: solid 1px #b8c2cc;
+    background-color: #ebeff2;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.sign-in-input-passwod-box{
+    margin-top: 16px;
 }
 
 .button-sign-in {
@@ -133,13 +154,109 @@ input::placeholder {
 input:focus {
     color: red;
 }
-.eye{
+.sign-in-input-passwod-eye{
   width: 24px;
   height: 24px;
-  object-fit: contain;
   position: absolute;
-  background: black;
-  margin: 16px 0 0 530px;
-  border: none;
-  cursor: pointer;
+}
+
+.bi--eye{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 12px;
+    right: 16px;
+}
+
+.sign-in-button-bi-open-eye{
+    background-image: url(img/open_eye.svg);
+}
+
+.sign-in-button-bi-close-eye{
+    background-image: url(img/close_eye.svg);
+}
+
+.sign-in-input-eye{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media (min-width: 400px) and (max-width: 810px){
+    .body-style{
+        display: block;
+    }
+    .form-logo{
+        display: none;
+    }
+    .form-sign-in-superadmin{
+        padding: 0;
+        width: 100%;
+    }
+    .form-sign-in{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-sign-in-supreme-logo{
+        display:  block;
+        background-image: linear-gradient(to top, #11194e, #030512);
+        margin-top: 100px;
+    }
+  
+    .sign-in-text{
+        margin: 50px 0 50px 0;
+    }
+    .sign-in-input{
+        margin: 0;
+    }
+    .button-sign-in{
+        margin: 0;
+        margin-top:50px;
+        padding: 0;
+        width: 70.7vw;
+    }
+
+    .sign-in-input--style{
+        width: 60vw;
+        min-width: 300px;
+        border-radius: 6px;
+    }
+    .sign-in-input-box--styles{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .sign-in-text--box{
+        padding: 12px;
+        width: 100px;
+        text-align: center;
+        border-radius: 6px;
+        position: relative;
+        bottom: 2px
+    }
+    .sign-in-input-email-box{
+        margin-bottom: 64px;
+    }
+    .sign-in-input-passwod-eye{
+        margin: 0;
+    }
+    .bi--eye{
+        top:10px
+    }
+    .error--message{
+        position: relative;
+    }
+    #email-error-message{
+        bottom: 35px;
+    }
+    #password-error-message{
+        top: 30px;
+    }
 }
