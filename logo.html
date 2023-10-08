@@ -1,48 +1,45 @@
-<!-- 
-Online HTML, CSS and JavaScript editor to run code online.
--->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="logo.css" />
   <title>Form</title>
 </head>
 
 <body class="body-style">
   <form class="form-sign-in-superadmin">
     <div class="form-logo">
-      <img src="img/supreme-logo.svg"  class="supreme-logo">
+      <img src="img/supreme-logo.svg"  class="supreme--logo  form-logo-supreme-logo">
       <img src="img/wave-top.svg" class="wave-top">
-      <img src="img/pic-cigares.jpg"  class="pic-cigares">
+      <img src="img/pic-cigares@3x.png"  class="pic-cigares">
     </div>
     <div class="form-sign-in">
-      <p class="sign-in-text">Sign in </p>
-      <div class="sign-in-input">
-        <div class="sign-in-input-email-box sign-in-input-box--styles">
-          <div class="sign-in-text-box">
-            <label for="sign-in-label-email" class="sign-in-input--text-styles">Email
-        </label>
-          </div>	
-        <input id="sign-in-label-email" class="sign-in-input-email-input sign-in-input--style sign-in-input--text-styles" type="text" placeholder="Email">
-        </div>
-          
-        <div class="sign-in-input-passwod-box sign-in-input-box--styles"> 
-          <div class="sign-in-text-box">
-            <label for="sign-in-laebl-password" class="sign-in-input--text-styles">Password   
-        </label>
+      <img src="img/supreme-logo.svg"  class="supreme--logo form-sign-in-supreme-logo">
+      <p class="sign-in-text">Sign in</p>
+      <div class="sign-in-input"> 
+        <div class="sign-in-input-email-box sign-in-input-box--styles sign-in-input--text-styles"> 
+          <label for="sign-in-label-email" class="sign-in-text--box">Email</label>
+          <input id="sign-in-label-email" class="sign-in-input-email-input sign-in-input--style" type="text" placeholder="Email">
+        </div> 
+        <span id="email-error-message" class="error--message sign-in-input--text-styles"></span>
+        <div class="sign-in-input-passwod-box sign-in-input-box--styles sign-in-input--text-styles">
+          <label for="sign-in-label-password" class="sign-in-text--box">Password</label>
+          <div class="sign-in-input-eye">
+            <input id="sign-in-label-password" class="sign-in-input-password-input sign-in-input--style" type="password" placeholder="********">
+            <div class="sign-in-input-passwod-eye">
+                <button id="eye-button" onclick="isEyeOpen(event)" class="sign-in-button-bi-close-eye bi--eye"></button>
+            </div>
           </div>
-        <input id="sign-in-laebl-password" class="sign-in-input-password-input sign-in-input--style sign-in-input--text-styles" type="password" placeholder="********">
-        <button class="eye"></button>
         </div>
+        <span id="password-error-message" class="error--message sign-in-input--text-styles"></span>        
       </div>
-       <button class="button-sign-in" onclick="isDataValdi()">Sign in</button>
+    <button class="button-sign-in" onclick="isDataValid(event)">Sign in</button>
     </div>
   </form>
       
 </body>
-<script src="script.js"></script>
+<script src="logo.js"></script>
   
 </html>
